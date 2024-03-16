@@ -13,6 +13,10 @@
   font-family: "GothamBlack";
   src: url("../assets/Gotham-Font/Gotham-Black.otf") format("opentype");
 }
+@font-face {
+  font-family: "GothamBold";
+  src: url(../assets/Gotham-Font/GothamBold.ttf) format("truetype");
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -82,35 +86,94 @@
   color: #C8FEC7;
   padding: 82px 100px;
   align-items: center;
+  gap: 77px;
 }
 .main .rates-container .rates div {
-  width: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .main .rates-container .rates .text-1 {
   font-weight: 400;
   font-family: "Anton", sans-serif;
   font-size: 128px;
+  line-height: 115.2px;
 }
 .main .rates-container .rates .text-2 {
-  font-size: 36px;
+  font-size: 35px;
   font-family: "GothamBlack";
   font-weight: 500;
-}
-.main .rates-container .rates span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-}
-.main .rates-container .rates span img {
-  width: 80px;
+  line-height: 36px;
+  letter-spacing: -0.05em;
 }
 .main .portfolio-container {
+  display: flex;
+  flex-direction: column;
   padding: 0px 100px;
+  gap: 31px;
 }
 .main .portfolio-container h1 {
   font-family: "Anton", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 64px;
+}
+.main .portfolio-container .portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.main .portfolio-container .portfolio-gallery .gallery-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid #737373;
+  padding: 29px;
+  gap: 23px;
+}
+.main .portfolio-container .portfolio-gallery .gallery-item button {
+  padding: 12px 24px;
+  font-family: "GothamBook";
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  background-color: #292929;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  letter-spacing: -0.05em;
+}
+.main .portfolio-container .portfolio-gallery .gallery-item button:hover {
+  background-color: #BE9FF6;
+}
+.main .portfolio-container .portfolio-gallery .gallery-item .item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.main .portfolio-container .portfolio-gallery .gallery-item .item-info .info-title {
+  color: #FFFFFF;
+  font-family: "GothamBold";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -0.05em;
+}
+.main .portfolio-container .portfolio-gallery .gallery-item .item-info span {
+  display: flex;
+  gap: 5px;
+}
+.main .portfolio-container .portfolio-gallery .gallery-item .item-info span p {
+  border-radius: 12px;
+  border: 1px solid #BE9FF6;
+  padding: 4px 8px;
+  background-color: #E9DFFC;
+  color: #784DC7;
+  font-family: "GothamBook";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */
