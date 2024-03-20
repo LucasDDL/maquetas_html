@@ -5,6 +5,14 @@
     background-color: black;
 }
 
+.container-title {
+    font-family: "Anton", sans-serif;
+            color: white;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 64px;
+}
+
 @font-face {
     font-family: 'GothamBook';
     src: url('../assets/Gotham-Font/GothamBook.ttf') format('truetype');
@@ -20,7 +28,9 @@
     src: url(../assets/Gotham-Font/GothamBold.ttf) format('truetype');
 }
 
-
+body {
+    width: 100vw;
+}
 
 .header {
     display: flex;
@@ -81,7 +91,7 @@
     .rates-container {
         width: 100%;
         padding: 10px 100px 10px 100px;
-        
+        display: flex;
         .rates {
             display: flex;
             justify-content: space-between;
@@ -100,15 +110,18 @@
                 .text-1 {
                     font-weight: 400;
                     font-family: "Anton", sans-serif;
-                    font-size: 128px;
+                    font-size: 7vmax;
                     line-height: 115.2px;
+                    flex: 1;
+                    text-align: center;
                 }
                 .text-2{
-                    font-size: 35px;
+                    font-size: 2.14vmax;
                     font-family: "GothamBlack";
                     font-weight: 500;
                     line-height: 36px;
                     letter-spacing: -0.05em;
+                    flex: 1;
                 }
             }
         }
@@ -117,12 +130,6 @@
         flex-direction: column;
         padding: 0px 100px;
         gap: 31px;
-        h1 {
-            font-family: "Anton", sans-serif;
-            color: white;
-            font-weight: 400;
-            font-size: 64px;
-        }
         .portfolio-gallery {
             display: flex;
             flex-wrap: wrap;
@@ -134,6 +141,7 @@
                 border: 1px solid #737373;
                 padding: 29px;
                 gap: 23px;
+                flex: 1;
                 button {
                     padding: 12px 24px;
                     font-family: 'GothamBook';
@@ -177,10 +185,69 @@
                             font-weight: 400;
                         }
                     }
-                    
                 }
             }
         }
+    }
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 100px;
+        gap: 50px;
+        .skills-frame {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .skills-row {
+                display: flex;
+                gap: 20px;
+                .skill-item {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #737373;
+                    border-radius: 10px;
+                    padding: 40px 50px 60px 40px;
+                    flex: 1;
+                    gap: 20px;
+                    .graph {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 12.5em;
+                        height: 12.5em;
+                        background-image: url(../assets/Ellipse\ 7.png);
+                        background-size: cover;
+                        background-position: center;
+                        p {
+                            font-family: 'GotamBlack', sans-serif;
+                            font-weight: 500;
+                            font-size: 36px;
+                            line-height: 36px;
+                            letter-spacing: -0.05em;
+                            color: #FFFFFF;
+                        }   
+                    }
+                    .skill-text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        color: #FFFFFF;
+                        flex: 1;
+                        h1 {
+                            font-family: 'GothamBlack';
+                            letter-spacing: -0.05em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .testimony-container {
+        background-image: url(../assets/unsplash_wHJ5L9KGTl4.png);
+        width: 100%;
+        padding: 147px 317px;
+       
     }
 }
 
