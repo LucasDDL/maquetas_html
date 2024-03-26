@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body{
     background-color: black;
 }
 
@@ -102,6 +105,7 @@ body {
             padding: 82px 100px ;
             align-items: center;
             gap: 77px;
+            flex-wrap: wrap;
            div {
                 display: flex;
                 flex-direction: column;
@@ -197,11 +201,11 @@ body {
         gap: 50px;
         .skills-frame {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             gap: 20px;
-            .skills-row {
-                display: flex;
-                gap: 20px;
+            // .skills-row {
+            //     display: flex;
+            //     gap: 20px;
                 .skill-item {
                     display: flex;
                     align-items: center;
@@ -234,22 +238,131 @@ body {
                         gap: 20px;
                         color: #FFFFFF;
                         flex: 1;
+                        font-size: 23px;
                         h1 {
                             font-family: 'GothamBlack';
                             letter-spacing: -0.05em;
+                            font-size: xx-large;
                         }
                     }
-                }
-            }
+                }              
+            
         }
     }
     .testimony-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
         background-image: url(../assets/unsplash_wHJ5L9KGTl4.png);
+        background-size: cover;
         width: 100%;
-        padding: 147px 317px;
-       
+        padding: 147px 317px ;
+        h1 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 48px;
+            letter-spacing: -0.05em;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            color: white;
+            font-size: 48px;
+            letter-spacing: -0.05em;
+
+        }
+    }
+    .about-me-container {
+        color: #FFFFFF;
+        width: 100%;
+        padding: 0px 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            "item1 item2"
+            "item3 item4"
+            "item5 item6";
+    }
+
+    .about-me-text {
+        font-size: 36px;
+        line-height: 36px;
+        font-family: "GothamBlack";
+        letter-spacing: -0.05em;
+        .span-about-me {
+            background: linear-gradient(90deg, rgb(225 95 95) 21%, rgb(251, 243, 68) 100%);
+            background-clip: text;
+            color: transparent;
+        }
+        .nsl-span {
+            background: linear-gradient(90deg, rgba(68,132,241,1) 21%, rgba(68,251,68,1) 100%);
+            background-clip: text;
+            color: transparent; 
+        }
+        .cristian-span {
+            background: linear-gradient(90deg, rgba(226,46,228,1) 12%, rgba(68,132,241,1) 100%);
+            background-clip: text;
+            color: transparent; 
+        }
+        .colombian-span {
+            background: linear-gradient(90deg, rgba(236,234,65,1) 16%, rgba(32,29,253,1) 50%, rgba(221,18,18,1) 94%);
+            background-clip: text;
+            color: transparent; 
+        }
+    }
+
+    .item1 {
+        grid-area: item1;
+        padding:0px 90px 115px 0px;
+        .about-me-title {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 64px;
+            line-height: 64px;
+            margin-bottom: 76px;
+        }
+    }
+    .item2 {
+        grid-area: item2;
+        background-image: url(../assets/cristian-bebe.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .item3 {
+        grid-area: item3;
+        background-image: url(../assets/cristian-niño.png);
+        background-size: cover;
+    }
+    .item4 {
+        grid-area: item4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 72px;
+    }
+    .item5 {
+        grid-area: item5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 130px;
+    }
+    .item6 {
+        grid-area: item6;
+        background-image: url(../assets/cristian-adulto.png);
+        background-size: cover;
+        background-position: center;
     }
 }
+
 
 
 
